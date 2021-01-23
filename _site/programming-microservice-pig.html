@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang='en' class='no-js '>
+<head>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='./assets/favicon.png' rel='shortcut icon'>
+<meta content='/programming-microservice-pig.html' name='app:pageurl'>
+
+
+  <title>微服务简介 # cheatsheet</title>
+  <meta content='微服务简介 # cheatsheet' property='og:title'>
+  <meta content='微服务简介 # cheatsheet' property='twitter:title'>
+  <meta content='article' property='og:type'>
+
+
+
+  <meta content='https://assets.devhints.io/previews/programming-microservice-pig.jpg?t=20210122164601' property='og:image'>
+  <meta content='https://assets.devhints.io/previews/programming-microservice-pig.jpg?t=20210122164601' property='twitter:image'>
+  <meta content='900' property='og:image:width'>
+  <meta content='471' property='og:image:height'>
+
+
+
+  <meta content="The one-page guide to 微服务简介 #: usage, examples, links, snippets, and more." name="description">
+  <meta content="The one-page guide to 微服务简介 #: usage, examples, links, snippets, and more." property="og:description">
+  <meta content="The one-page guide to 微服务简介 #: usage, examples, links, snippets, and more." property="twitter:description">
+
+
+<link rel="canonical" href="http://service01:3333/programming-microservice-pig">
+<meta name="og:url" content="http://service01:3333/programming-microservice-pig">
+
+
+
+
+
+  <meta content='Devhints.io cheatsheets' property='og:site_name'>
+
+
+
+
+
+
+
+
+
+  <meta content='Others' property='article:section'>
+
+
+
+
+
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-106902774-1'></script>
+<script>
+
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)};
+gtag('js',new Date());
+gtag('config','UA-106902774-1');
+</script>
+
+
+
+  <meta property='page:depth' content='1'>
+
+
+<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
+<script>(function(H){H.className=H.className.replace(/\bNoJs\b/,'WithJs')})(document.documentElement)</script>
+
+  <script>(function(d,s){if(window.Promise&&[].includes&&Object.assign&&window.Map)return;var js,sc=d.getElementsByTagName(s)[0];js=d.createElement(s);js.src='https://cdn.polyfill.io/v2/polyfill.min.js';sc.parentNode.insertBefore(js, sc);}(document,'script'))</script>
+
+<!--[if lt IE 9]><script src='https://cdnjs.cloudflare.com/ajax/libs/nwmatcher/1.2.5/nwmatcher.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/json2/20140204/json2.js'></script><script src='https://cdn.rawgit.com/gisu/selectivizr/1.0.3/selectivizr.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'></script><![endif]-->
+
+  <style>html{opacity:0}</style>
+  <link rel="stylesheet" href="./assets/2015/style.css?t=20210122164601">
+  <link href="./assets/style.css?t=20210122164601" rel="stylesheet" />
+  <link href="./assets/print.css?t=20210122164601" rel="stylesheet" media="print" />
+</head>
+<body>
+<div class='all'>
+
+<div class='site-header'>
+  <div class='container'>
+    This is <a href="."><em>Devhints.io cheatsheets</em></a> &mdash; a collection of cheatsheets I've written.
+  </div>
+</div>
+
+
+
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://google.com/article"
+  },
+  "headline": "微服务简介 # cheatsheet",
+  "image": [ "https://assets.devhints.io/previews/programming-microservice-pig.jpg?t=20210122164601" ],
+  "description": "The one-page guide to 微服务简介 #: usage, examples, links, snippets, and more."
+}
+</script>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+    "@type": "ListItem",
+    "position": 1,
+    "item": {
+      "@id": "http://service01:3333/#others",
+      "name": "Others"
+    }
+  },{
+    "@type": "ListItem",
+    "position": 2,
+    "item": {
+      "@id": "http://service01:3333/programming-microservice-pig",
+      "name": "微服务简介 #"
+    }
+  }]
+}
+</script>
+
+
+<div class='post-list -single -cheatsheet'>
+  <div class='post-item'>
+    <div class='post-headline -cheatsheet'>
+      <p class='prelude'><span></span></p>
+      <h1><span>微服务简介 #</span></h1>
+
+      <div class='pubbox'>
+        <div class='HeadlinePub' role='complementary'>
+  <script async src='https://pubsrv.devhints.io/carbon.js?serve=CE7IK5QM&placement=devhintsio&cd=pubsrv.devhints.io/s' id="_carbonads_js"></script>
+  <span class='placeholder -one'></span>
+  <span class='placeholder -two'></span>
+  <span class='placeholder -three'></span>
+  <span class='placeholder -four'></span>
+</div>
+
+      </div>
+    </div>
+
+    <div class='post-content -cheatsheet'>
+      <h1 id="微服务简介">微服务简介</h1>
+
+<p>pig基于Spring Boot 2.4,Spring Cloud 2020 &amp; Alibaba,OAuth2的微服务RBAC 权限管理系统.</p>
+
+<h2 id="spring-boot-与-spring-cloud-关系">spring Boot 与 Spring Cloud 关系</h2>
+
+<p>Spring Boot 是 Spring 的一套快速配置脚手架，可以基于spring Boot 快速开发单个微服务，Spring Cloud是一个基于Spring Boot实现的云应用开发工具；Spring Boot专注于快速、方便集成的单个个体，Spring Cloud是关注全局的服务治理框架；spring Boot使用了默认大于配置的理念，很多集成方案已经帮你选择好了，能不配置就不配置，Spring Cloud很大的一部分是基于Spring Boot来实现。</p>
+
+<h2 id="spring-cloud-alibaba">spring Cloud Alibaba</h2>
+
+<p>Spring Cloud Alibaba是阿里的微服务解决方案，阿里巴巴结合自身微服务实践,开源的微服务全家桶，在Spring Cloud项目中孵化成为Spring Cloud的子项目。</p>
+
+<p><a href="&quot;https://spring.io/projects/spring-cloud-alibaba&quot;">已被收录入spring Cloud官网</a></p>
+
+<p>第一代的Spring Cloud标准中很多组件已经闭源停更,如：Eureak,zuul等。所以Spring Cloud Alibaba很有可能成为Spring Cloud第二代的标准实现，所以许多组件在业界逐渐开始使用，已有很多成功案例。值得一提的是Spring Cloud Alibaba对Dubbo做了很好的兼容，同时也提供了一些强大的功能，如 Sentinel 流控 ，Seata 分布式事务，Nacos 服务发现与注册等等。</p>
+
+<p><a href="&quot;https://github.com/Nepxion/Discovery&quot;">Discovery spring Cloud Alibaba 官方推荐开源项目</a></p>
+
+<h1 id="功能模块介绍">功能模块介绍</h1>
+
+<p>pig项目并未全套整合Alibaba相关组件,仅仅是集成了核心功能</p>
+
+<h2 id="nacos">Nacos</h2>
+
+<h3 id="nacos简介">Nacos简介</h3>
+
+<p>Nacos是Alibaba开源组件,致力于帮助您发现、配置和管理微服务。Nacos 提供了一组简单易用的特性集，帮助您快速实现动态服务发现、服务配置、服务元数据及流量管理。
+<a href="https://nacos.io/zh-cn/docs/what-is-nacos.html">官网</a>
+<a href="https://github.com/alibaba/nacos">Github</a></p>
+
+<h3 id="项目中对应">项目中对应</h3>
+
+<p>在项目中对应 <strong>pig-register</strong>模块,Nacos默认的端口为8848端口,通过http://IP:8848/Nacos 进行访问.</p>
+
+<p>在项目中所有木块启动配置均通过xxxx.yml进行配置.
+yml是映射文件,映射到相关模块的配置对象,在Idea中可以通过提示按钮,查看对象中存在的配置属性,及相关的注释.<br />
+从配置中可以看出当前nacos所有的线上配置均存储与pig_config数据库中
+<a href="https://imgchr.com/i/sW4Y8I"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW4Y8I.png" alt="sW4Y8I.png" /></a></p>
+
+<h3 id="服务注册nacos">服务注册Nacos</h3>
+
+<p>已pig-auth授权服务为例,如下图:
+<a href="https://imgchr.com/i/sW4wqS"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW4wqS.png" alt="sW4Y8I.png" /></a>
+最上面是运行时的端口,下面是运行的服务ID,cloud.nacos 就是注册到Nacos中的配置.
+config 中配置在Nacos中的注册内容.
+server-addr: 中配置发现nacos的地址,这边统一配置pig-register:8848,通过Host映射对应到部署的Nacos.
+file-extension: 配置文件的结尾
+shared-configs: 配置文件的名称</p>
+
+<pre><code>	- application-${spring.profiles.active}.${spring.cloud.nacos.config.file-extension}
+	// application对应上面spring.application.name-&gt;映射为pom.xml中的artifactId,即pig-auth
+	// ${spring.profiles.active} 即映射下面的@profiles.active@ 最终映射为根目录下的pom.xml中的 dev
+	// 最后 ${spring.cloud.nacos.config.file-extension} 及上面的文件结尾 yml
+	// 所以最后该服务在nacos的配置文件未 pig-auth-dev.yml
+</code></pre>
+<p>group: 服务的分组配置,默认为DEFAULT_GROUP 在分组集群管理时使用</p>
+
+<p>还有更多的相关设置,例如心跳包的相关设置等.</p>
+
+<h3 id="nacos的负债均衡">Nacos的负债均衡</h3>
+
+<p>Nacos与gateway已经实现了默认的负载均衡,请求时会自动平均分配.
+若需要实现多的负债功能,可以整合<strong>Ribbon</strong>. 在当前模项目中,已经在pig-register模块中添加了Ribbon模块.</p>
+
+<p><a href="https://imgchr.com/i/sW41Ve"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW41Ve.png" alt="sW4Y8I.png" /></a>
+通过@Bean注入的形式,可以使用不同的负载均衡模式,Ribbon已经默认实现了七种负载均衡策略.
+<a href="https://www.cnblogs.com/xuweiweiwoaini/p/13764522.html">ribbon负载简单介绍</a></p>
+
+<p>图中使用的<strong>NacosRule</strong>是Nacos基于Ribbon实现的一套负载策略,基于Nacos中服务实例权重在进行负载的.
+<code>有效性待测试</code></p>
+
+<h3 id="nacos简单详解">Nacos简单详解</h3>
+
+<p>Nacos是分布式集群化的核心,所有服务均在此注册,并且发送心跳包保持对应链接.同时其他的服务同时访问nacos获取其他服务的地址,确定请求的详细路径
+同时Nacos管理了所有的服务相关配置,让服务仅需配置最简单的基本配置(Nacos的注册地址),其他的所有配置均在Nacos中注册,并提供了对应的配置文件管理,修改等功能.便于运维</p>
+
+<h2 id="gateway">Gateway</h2>
+
+<p>顾名思义就是网关,用于处理所有请求的中转站,配合Nacos解决集群化部署时服务器的集群管理,负载均衡等相关功能.</p>
+
+<h3 id="项目中配置">项目中配置</h3>
+
+<p><strong>pig-gateway</strong> 项目中的网关模块,代码并不多,处理了一下验证码,传递数据加解密相关内容.
+配置文件如下.</p>
+
+<p><a href="https://imgchr.com/i/sW485d"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW485d.png" alt="sW4Y8I.png" /></a>
+除了Nacos其他的服务配置基本大同小异,都是在本地设置端口号,Nacos注册地址,对应的配置文件,然后所有的配置交由Nacos去管理.</p>
+
+<p><a href="https://imgchr.com/i/sW43UH"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW43UH.png" alt="sW4Y8I.png" /></a>
+核心配置如下,在配置中声明对应的服务,访问路径</p>
+
+<pre><code>spring:
+  cloud:
+    gateway:
+      routes:
+        # 认证中心
+        # 服务ID,对应其他服务启动的时候spring.application.name
+        - id: pig-auth
+          # 对应请求转发的地址,也可以是外部链接
+          uri: lb://pig-auth
+          predicates:
+			# 匹配路径,当时请求auth/**的接口,就进行转发.
+            - Path=/auth/**
+          filters:
+            # 验证码处理
+            - ValidateCodeGatewayFilter
+            # 前端密码解密
+            - PasswordDecoderFilter
+        #UPMS 模块
+        - id: pig-upms-biz
+          uri: lb://pig-upms-biz
+          predicates:
+            - Path=/admin/**
+          filters:
+            # 限流配置
+            - name: RequestRateLimiter
+              args:
+                key-resolver: '#{@remoteAddrKeyResolver}'
+                redis-rate-limiter.replenishRate: 100
+                redis-rate-limiter.burstCapacity: 200
+</code></pre>
+
+<p>在routes中配置对应的内容</p>
+
+<h2 id="sentinel流量保护">sentinel流量保护</h2>
+
+<p>sentinel 是面向分布式服务架构的流量控制组件，主要以流量为切入点，从流量控制、熔断降级、系统自适应保护等多个维度来帮助您保障微服务的稳定性。</p>
+
+<p>当调用链路中某个资源出现不稳定，例如，表现为 timeout，异常比例升高的时候，则对这个资源的调用进行限制，并让请求快速失败，避免影响到其它的资源，最终产生雪崩的效果。</p>
+
+<p>sentinel就是应付高并发或者其他的情况下接口异常,或者未响应时进行的降级熔断处理.</p>
+
+<h3 id="项目中的sentinel">项目中的sentinel</h3>
+
+<p>项目中<strong>sentinel</strong>位于<strong>pig-visual-&gt;pig-sentinel-dashborad</strong>主要是可视化的管理界面功能.</p>
+
+<p>对应的配置如下</p>
+
+<p><a href="https://imgchr.com/i/sW4aKf"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW4aKf.png" alt="sW4Y8I.png" /></a>
+这里可以看到有两个配置文件. <strong>application.yml</strong> 和 <strong>bootstrap.yml</strong>
+<strong>bootstrap.yml</strong>为服务启动配置.主要就是注册到nacos.
+<strong>application.yml</strong>作为启动配置文件,设定了前端页面访问的相关端口账号密码等.</p>
+
+<h3 id="降级熔断">降级熔断</h3>
+
+<p>在启动了<strong>pig-sentinel-dashborad</strong>服务之后可以通过5003端口查看sentinel的控制台,在控制台中可以看到正在运行服务实例,然后对对应的接口来进行<strong>限流</strong><strong>降级</strong>处理.</p>
+
+<p><a href="https://imgchr.com/i/sW4t2t"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW4t2t.png" alt="sW4Y8I.png" /></a>
+在降级之后,对应的服务内部就会有一个降级处理的地方,默认的在<strong>common</strong>里.</p>
+
+<p><a href="https://imgchr.com/i/sW4NxP">&lt;img style=”display: inline-block; width: 100%; max-width: 100%; height: auto;” src=“https://s3.ax1x.com/2021/01/20/sW4NxP.png” alt=”sW4Y8I.png”&gt;</a>
+一个是限流的处理,一个是降级熔断的默认处理方式. 总的来说,返回结果就是</p>
+<pre><code>	return R.failed(ex.getLocalizedMessage());
+</code></pre>
+
+<p>在跨服务的过程中,一样可能出现问题,同时跨服务调用也是一个问题.项目中采用了 openfeign 的跨服务调用框架.
+简单总结就是在对应的服务下按照标准创建api模块,然后创建Service,接着创建factory去生成失败的时候 fallback的实现类.  在fallback的实现类中去处理失败操作.</p>
+
+<p><a href="https://imgchr.com/i/sW4JPA">&lt;img style=”display: inline-block; width: 100%; max-width: 100%; height: auto;” src=“https://s3.ax1x.com/2021/01/20/sW4JPA.png” alt=”sW4JPA.png”&gt;</a>
+在高并发的情况下,不重要的子系统崩掉可以通过失败处理将要执行的操作写入失败记录的数据库,然后通过定时任务服务将失败的操作正常的去执行.</p>
+
+<h3 id="跨服务事务处理">跨服务事务处理</h3>
+
+<p>在跨服务的时候可以通过<a href="http://seata.io/zh-cn/">seate</a>来进行事务的管理.在添加了seata之后,在需要进行事务管理的业务方法上添加<strong>@GlobalTransactional</strong>注解即可.</p>
+
+<p>** 目前项目中并未集成seate **</p>
+
+<p>还可以使用pigx中使用的事务框架基于 LCN 4.1 深度定制，事务操作和代码耦合度极低，支持注册中心的事务发现和自动管理，用法完全兼容LCN 。
+<a href="https://pig4cloud.com/doc/pigx/pigx-tx">pigx文档介绍,及演示视频</a></p>
+
+<h2 id="spring-boot-amdin">spring Boot Amdin</h2>
+
+<p>Spring Boot Admin 是用来管理 Spring Boot 应用程序的一个简单的界面。主要用来查看日志文件,在线调整日志文件级别,服务系统环境,内存等相关信息.</p>
+
+<p>对应项目中的<strong>pig-visual-pig-monitor</strong></p>
+
+<p>启动服务之后通过配置文件中的5001端口即可访问Spring Boot界面.</p>
+
+<h2 id="codegen">codegen</h2>
+
+<p>主要用于生成模板代码的…介绍太少,没太整明白使用方式.
+与业务逻辑无关.</p>
+
+<p>对应项目中的<strong>pig-visual-pig-codegen</strong></p>
+
+<h2 id="xxl-job">xxl-job</h2>
+
+<p>XXL-JOB是一个分布式任务调度平台，其核心设计目标是开发迅速、学习简单、轻量级、易扩展。现已开放源代码并接入多家公司线上产品线，开箱即用。</p>
+
+<p><a href="https://www.xuxueli.com/xxl-job/#1.1%20%E6%A6%82%E8%BF%B0">官网地址</a></p>
+
+<p>目前没有使用场景,看到的介绍是在配合服务降级时使用.
+<code>例如电商平台购物流程,部分服务熔断降级了,在降级处理中将日志写入数据库,然后通过XXL-JOB定时启动任务来去添加上对应的操作</code></p>
+
+<h1 id="项目模块介绍">项目模块介绍</h1>
+
+<h2 id="pig-common">pig-common</h2>
+
+<p>核心包作为基础依赖库,配置在<strong>pig-common</strong>中,作为基础让其他模块进行引用.</p>
+
+<h3 id="core">core</h3>
+
+<p>核心配置包,配置了一下授权,校验,存储数据库参数校验等相关的东西</p>
+
+<h3 id="datasource">datasource</h3>
+
+<p>管理数据库连接核心包,当需要使用多数据库源时,需要进行对应的配置</p>
+
+<h3 id="feign">feign</h3>
+
+<p>跨服务调用核心OpenFeign模块的集成,例如upms-api模块,就是引用该模块实现跨服务调用功能,然后在security中调用用户登陆.</p>
+
+<h3 id="job">job</h3>
+
+<p>任务调度模块的对所有项目的注入入口</p>
+
+<h3 id="log">log</h3>
+
+<p>项目中的log基础模块,spring Boot Ademin的日志查看的数据来源.</p>
+
+<h3 id="mybatis">mybatis</h3>
+
+<p>项目中的mybatis-plus注入的地方,需要使用增强的数据库操作时,再此编写对应的操作类,然后通过AutoConfiguration中进行注入</p>
+
+<h3 id="security">security</h3>
+
+<p>身份权限校验,使用的oauth2来进行校验.
+当前项目的身份校验逻辑均在此编写.</p>
+
+<h3 id="swagger">swagger</h3>
+
+<p>在线的API文件+接口调试.
+当服务部署完成后可以通过<a href="http://pig-gateway:9999/swagger-ui/index.html">http://pig-gateway:9999/swagger-ui/index.html</a></p>
+
+<p><a href="https://imgchr.com/i/sW4dr8"><img style="display: inline-block; width: 100%; max-width: 100%; height: auto;" src="https://s3.ax1x.com/2021/01/20/sW4dr8.png" alt="sW4dr8.png" /></a>
+上面输入账号密码.下面输入 test test然后点击授权,即可完成授权,在网页中请求接口.</p>
+
+<h2 id="pig-auth">pig-auth</h2>
+
+<p>授权服务,所有服务的授权令牌均在此处理.</p>
+
+<h2 id="pig-curriculum">pig-curriculum</h2>
+
+<p>课程模块,所有课程的功能再此实现</p>
+
+<h2 id="pig-exam">pig-exam</h2>
+
+<p>考试模块,考试相关的内容</p>
+
+<h2 id="pig-exper">pig-exper</h2>
+
+<p>实验模块,所有实验相关的内容</p>
+
+<h2 id="pig-gateway">pig-gateway</h2>
+
+<p>网关服务,用于处理所有的请求转发</p>
+
+<h2 id="pig-progress">pig-progress</h2>
+
+<p>进度服务,学习进度等. 目前空白</p>
+
+<h2 id="pig-register">pig-register</h2>
+
+<p>Nacos服务,用于注册所有的服务,管理配置.</p>
+
+<h2 id="pig-upms">pig-upms</h2>
+
+<p>用户服务,用于管理所有用户增删改查的服务</p>
+
+<h2 id="pig-visual">pig-visual</h2>
+
+<p>外部服务,包含spring Boot Admin,xxl-Job,sentinel,codegen.</p>
+
+    </div>
+
+    
+<ul class="social-list ">
+  <li class="facebook link hint--bottom" data-hint="Share on Facebook"><a href="https://www.facebook.com/sharer/sharer.php?u=http://service01:3333/programming-microservice-pig.html" target="share"><span class="text"></span></a></li>
+  <li class="twitter link hint--bottom" data-hint="Share on Twitter"><a href="https://twitter.com/intent/tweet?text=The%20ultimate%20cheatsheet%20for%20%E5%BE%AE%E6%9C%8D%E5%8A%A1%E7%AE%80%E4%BB%8B%20#.%20http://service01:3333/programming-microservice-pig.html" target="share"><span class="text"></span></a></li>
+  
+</ul>
+
+  </div>
+</div>
+
+  <div class="about-the-site">
+  <div class="container">
+    <p class='blurb'>
+    <strong><a href=".">Devhints.io cheatsheets</a></strong> is a collection of cheatsheets I've written over the years.
+      Suggestions and corrections? <a href='https://github.com/rstacruz/cheatsheets/issues/907'>Send them in</a>.
+      <i class='fleuron'></i>
+      I'm <a href="http://ricostacruz.com">Rico Sta. Cruz</a>. 
+      Check out my <a href="http://ricostacruz.com/til">Today I learned blog</a> for more.
+    </p>
+
+    
+    <p class='back'>
+      <a class='big-button -back -slim' href='.#toc'></a>
+    </p>
+    
+
+    <p>
+    </p>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.5/highlight.min.js"></script>
+
+
+
+
+<script src="https://cdn.rawgit.com/rstacruz/unorphan/v1.0.1/index.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script>unorphan('h1, h2, h3, p, li, .unorphan')</script>
+
+</body>
+</html>
+
