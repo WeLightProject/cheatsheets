@@ -1,4 +1,8 @@
 _output
+<<<<<<< HEAD
+=======
+_site
+>>>>>>> b27d7d7f553a5d67a51f2917f4fc3c9998aac024
 .jekyll-metadata
 /node_modules
 /vendor

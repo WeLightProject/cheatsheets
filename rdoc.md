@@ -16,7 +16,11 @@ layout: 2017/sheet
 #
 # @param [String] param_name The xx and xx.
 #
+<<<<<<< HEAD
 # @see http://url.com
+=======
+# @see https://example.com/
+>>>>>>> b27d7d7f553a5d67a51f2917f4fc3c9998aac024
 #
 # @return [true] if so
 ```
@@ -30,9 +34,15 @@ _emphasized_
 ```
 
 ```markdown
+<<<<<<< HEAD
 http://www.link.com
 See Models::User@Examples
 {Google}[http://google.com]
+=======
+https://www.example.com/
+See Models::User@Examples
+{Google}[https://google.com/]
+>>>>>>> b27d7d7f553a5d67a51f2917f4fc3c9998aac024
 ```
 
 ### Skip
@@ -109,5 +119,9 @@ Place this at the beginning of the file.
 {: .-one-column}
 
 * <http://rdoc.rubyforge.org/RDoc/Markup.html>
+<<<<<<< HEAD
 * <http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
+=======
+* <https://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md>
+>>>>>>> b27d7d7f553a5d67a51f2917f4fc3c9998aac024
 {: .-also-see}

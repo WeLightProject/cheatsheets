@@ -1,5 +1,9 @@
 GEM
+<<<<<<< HEAD
   remote: https://gems.ruby-china.com/
+=======
+  remote: https://rubygems.org/
+>>>>>>> b27d7d7f553a5d67a51f2917f4fc3c9998aac024
   specs:
     activesupport (6.0.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
